@@ -1,0 +1,18 @@
+Process Backgrounded
+2016/12/14-06:00:43 Starman::Server (type Net::Server::PreFork) starting! pid(23979)
+Resolved [localhost]:8888 to [127.0.0.1]:8888, IPv4
+Resolved [localhost]:8888 to [127.0.0.1]:8888, IPv4
+Duplicate configuration (TCP) on [127.0.0.1]:8888 with IPv4) - skipping
+Binding to TCP port 8888 on host 127.0.0.1 with IPv4
+Setting gid to "1000 1000 91 92 1000"
+127.0.0.1 - - [14/Dec/2016:06:01:03 +0200] "GET / HTTP/1.1" 200 2365 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36"
+127.0.0.1 - - [14/Dec/2016:06:01:03 +0200] "GET /js/app.js HTTP/1.1" 200 2604 "http://127.0.0.1:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36"
+127.0.0.1 - - [14/Dec/2016:06:01:03 +0200] "GET /bower_components/angular/angular.min.js HTTP/1.1" 200 150014 "http://127.0.0.1:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36"
+127.0.0.1 - - [14/Dec/2016:06:01:04 +0200] "GET /img/favicon.ico HTTP/1.1" 200 1150 "http://127.0.0.1:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36"
+DBIx::Class::Storage::DBI::catch {...} (): DBI Connection failed: DBI connect('database=app','app',...) failed: Access denied for user 'app'@'localhost' (using password: YES) at /home/camelotus/perl5/lib/perl5/DBIx/Class/Storage/DBI.pm line 1517. at lib/App/Services.pm line 85
+DBIx::Class::Storage::DBI::catch {...} (): DBI Connection failed: DBI connect('database=app','app',...) failed: Access denied for user 'app'@'localhost' (using password: YES) at /home/camelotus/perl5/lib/perl5/DBIx/Class/Storage/DBI.pm line 1517. at lib/App/Services.pm line 85
+DBIx::Class::Storage::DBI::catch {...} (): DBI Connection failed: DBI connect('database=app','app',...) failed: Access denied for user 'app'@'localhost' (using password: YES) at /home/camelotus/perl5/lib/perl5/DBIx/Class/Storage/DBI.pm line 1517. at lib/App/Services.pm line 85
+127.0.0.1 - - [14/Dec/2016:06:03:40 +0200] "GET / HTTP/1.1" 200 2365 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36"
+127.0.0.1 - - [14/Dec/2016:06:03:40 +0200] "GET /img/favicon.ico HTTP/1.1" 200 1150 "http://127.0.0.1:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36"
+127.0.0.1 - - [14/Dec/2016:06:03:40 +0200] "GET /app/nodes/1 HTTP/1.1" 200 558 "http://127.0.0.1:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36"
+127.0.0.1 - - [14/Dec/2016:06:03:46 +0200] "GET /app/addNode/3 HTTP/1.1" 200 24 "http://127.0.0.1:8888/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.100 Safari/537.36"

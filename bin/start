@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#
+# Please install Starman for below command to work!
+#
+
+CONSOLE_LOG='logs/console.log'
+
+exec 2> $CONSOLE_LOG starman -D --pid .pid --workers 4 --listen localhost:8888 -I lib --error-log $CONSOLE_LOG --access-log $CONSOLE_LOG -a bin/app.pl >> $CONSOLE_LOG
